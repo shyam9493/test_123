@@ -1,0 +1,133 @@
+.whatIs--section {
+  width: 100vw;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+  position: relative;
+}
+
+.whatIs--section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.23;
+}
+
+.whatIs--image {
+  margin-top: -8vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.whatIs-image__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.whatIs-image__1 {
+  width: 30vw;
+  height: 45vw;
+}
+.whatIs-image__2 img:nth-child(1) {
+  width: 39vw;
+  height: 21vw;
+}
+.whatIs-image__2 img:nth-child(2) {
+  width: 42vw;
+  height: 22vw;
+}
+
+.whatIs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 10vh;
+}
+.whatIs-moon__container {
+  position: relative;
+  width: 65vw;
+  height: 65vw;
+  margin-left: -26vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatIs-moon__image {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+}
+
+.whatIs-text__main {
+  text-align: center;
+  position: relative;
+  height: 20.798vw;
+}
+.whatIs-text__shadow {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.16);
+
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20vw;
+  line-height: 20.798vw;
+}
+
+.whatIs-text__heading {
+  width: 100%;
+  top: 11.806vw;
+  font-size: 5.556vw;
+  font-weight: 400;
+  font-family: "Anton";
+  position: absolute;
+  line-height: 5.546vw;
+  display: flex;
+  justify-content: center;
+}
+.whatIs-text__para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.whatIs-text__para p {
+  width: 47.306vw;
+  font-family: "roboto";
+  font-size: 1.3vw;
+  line-height: 1.911vw;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.whatIs-text__para p > span {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  margin-right: 4px;
+}
+
+.whatIs-text__para1 > .word,
+.whatIs-text__para2 > .word {
+  position: relative;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 550px) {
+  .whatIs-text__para p {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+
+  .whatIs-text__para1 > .word,
+  .whatIs-text__para2 > .word {
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,131 @@
+.preloader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+}
+
+.preloader__content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+}
+
+.preloader__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.special {
+  position: relative;
+  transform-style: preserve-3d;
+  /* transition: transform 0.4s; */
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.animated__text {
+  font-family: "Anton";
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  transform: rotateX(-90deg) translateY(4vw);
+  transform-origin: bottom center;
+  position: absolute;
+  top: 0;
+  left: 7%;
+  opacity: 0;
+}
+
+.launch-text {
+  margin-left: 90px;
+}
+
+.special svg {
+  transition: all 0.4s;
+  margin: 0px;
+  opacity: 1;
+}
+
+.item {
+  width: fit-content;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  z-index: 1;
+}
+
+.rocket {
+  position: absolute;
+  right: -170px;
+  z-index: 1;
+}
+@media screen and (max-width: 1500px) {
+  .animated__text {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .animated__text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .animated__text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .animated__text {
+    transform: rotateX(-90deg) translateY(6.5vw);
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .animated__text {
+    font-size: 3rem;
+  }
+
+  .rocket {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .animated__text {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .preloader__text {
+    width: 100%;
+  }
+
+  .animated__text {
+    transform: rotateX(-90deg) translateY(6.5vw);
+    font-size: 3rem;
+    left: 0;
+  }
+}
